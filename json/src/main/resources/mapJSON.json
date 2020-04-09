@@ -1,0 +1,26 @@
+{
+  "key1" : "value1",
+  "key2" : "value2",
+  "key3" : "value3",
+  "booleanTrue" : true,
+  "booleanFalse" : false,
+  "array" : [ "1", "2", "3" ],
+  "arrayObjects" : [ {
+    "id" : 1,
+    "name" : "tuna",
+    "lastname" : "tore"
+  }, {
+    "id" : 2,
+    "name" : "tuna2",
+    "lastname" : "tore2"
+  } ],
+  "nestedObject" : {
+    "id" : 1,
+    "name" : "tuna",
+    "lastname" : "tore"
+  },
+  "integer" : 1,
+  "valueNull" : null,
+  "list" : [ "1", "2", "3" ],
+  "date" : "2020-04-09T18:15:54.494583900"
+}
