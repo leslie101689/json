@@ -2,7 +2,6 @@ package udemy.json;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonParseException;
