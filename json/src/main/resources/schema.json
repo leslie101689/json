@@ -1,0 +1,27 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:udemy:json:domain:UdemyLectureSchema",
+  "$schema" : "http://json-schema.org/draft-03/schema#",
+  "properties" : {
+    "id" : {
+      "type" : "integer",
+      "description" : "id of the field"
+    },
+    "name" : {
+      "type" : "string",
+      "required" : true,
+      "description" : "name of the field and required"
+    },
+    "nameLine2" : {
+      "type" : "string",
+      "required" : true,
+      "description" : "nameline 2 of the field and required"
+    },
+    "enabled" : {
+      "type" : "boolean"
+    },
+    "Description" : {
+      "type" : "string"
+    }
+  }
+}
