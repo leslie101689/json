@@ -12,19 +12,19 @@ import udemy.json.domain.UdemyStudent;
 public class StreamingAPI_JsonGenerator {
 
 	public static void main(String[] args) {
-
+		
 		try {
 			
 			ObjectMapper objectMapper = new ObjectMapper();
-			
+		
 			JsonFactory jsonFactory = new JsonFactory();
-			
+		
 			JsonGenerator jsonGenerator = jsonFactory.createGenerator(System.out);
-				
+			
 			jsonGenerator.setPrettyPrinter(new DefaultPrettyPrinter());
 			jsonGenerator.setCodec(objectMapper);
-		
-			jsonGenerator.writeStartObject(); //JSON Start object {
+			
+			jsonGenerator.writeStartObject(); //JSON Start object
 			
 			jsonGenerator.writeFieldName("id");
 			jsonGenerator.writeString("1234");
@@ -46,10 +46,10 @@ public class StreamingAPI_JsonGenerator {
 			jsonGenerator.writeStartArray();
 			jsonGenerator.writeString("1");
 			jsonGenerator.writeString("2");
-			jsonGenerator.writeString("3");			
+			jsonGenerator.writeString("3");
 			jsonGenerator.writeEndArray();
 			
-			jsonGenerator.writeEndObject(); //end json
+			jsonGenerator.writeEndObject();
 			
 			jsonGenerator.close();
 			
@@ -58,10 +58,6 @@ public class StreamingAPI_JsonGenerator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
-		
-		
 
 	}
 

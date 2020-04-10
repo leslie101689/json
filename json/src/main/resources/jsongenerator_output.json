@@ -1,0 +1,11 @@
+{
+  "id" : "1234",
+  "id2" : "1234",
+  "name" : "tuna",
+  "object" : {
+    "id" : 1,
+    "name" : "udemy student name",
+    "lastname" : "udemy student lastname"
+  },
+  "array" : [ "1", "2", "3", {"key1":"value1","key2":"value2","key3":"value3","key4":"value4"}, "4" ]
+}
