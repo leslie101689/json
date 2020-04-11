@@ -5,7 +5,31 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
+  <properties>
+  	  <jersey-server>2.22.2</jersey-server>
+  	  <jackson-jaxrs>2.7.4</jackson-jaxrs>
+  </properties>
+
+  
   <dependencies>
+  	<dependency>
+    	<groupId>org.glassfish.jersey.containers</groupId>
+    	<artifactId>jersey-container-servlet</artifactId>
+    	<version>${jersey-server}</version>
+  	</dependency>
+  	
+  	<dependency>
+    	<groupId>com.fasterxml.jackson.jaxrs</groupId>
+    	<artifactId>jackson-jaxrs-json-provider</artifactId>
+    	<version>${jackson-jaxrs}</version>
+  	</dependency>
+  	
+  	<dependency>
+    	<groupId>com.fasterxml.jackson.jaxrs</groupId>
+    	<artifactId>jackson-jaxrs-xml-provider</artifactId>
+    	<version>${jackson-jaxrs}</version>
+  	</dependency>
+  
   	<dependency>
     	<groupId>javax.servlet</groupId>
     	<artifactId>javax.servlet-api</artifactId>
